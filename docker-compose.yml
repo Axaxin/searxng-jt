@@ -25,6 +25,7 @@ services:
      #- "8180:8080"   # 这个冒号左边的端口可以更改，右边的不要改
     volumes:
       - ./searxng:/etc/searxng:rw
+      - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - SEARXNG_BASE_URL=https://${SEARXNG_HOSTNAME:-localhost}/
     cap_drop:
