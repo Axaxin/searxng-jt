@@ -37,7 +37,12 @@ services:
         max-size: "1m"
         max-file: "1"
 
+#networks:
+  #searxng:
+    #ipam:
+      #driver: default
+      
 networks:
-  searxng:
-    ipam:
-      driver: default
+  default:
+    external:
+      name: wikijs.io
