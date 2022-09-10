@@ -1,4 +1,5 @@
-# searxng-jtdocker
+# searxng-jt
+
 
 ```bash
 git clone https://github.com/Axaxin/searxng-jt.git
